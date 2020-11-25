@@ -1,0 +1,216 @@
+/* Utilities */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+	--primary-color: #27c72f;
+	--secondary-color: #237721;
+	--light-color: #f3f3f3;
+	--dark-color: #111;
+}
+* {
+	font-family: 'Poppins';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+p {
+	color: var(--dark-color);
+	font-weight: 300;
+}
+body::-webkit-scrollbar {
+	width: 0.3em;
+}
+body::-webkit-scrollbar-thumb {
+	background-color:var(--primary-color);
+	border-radius: 50px;
+}
+/* Navbar */
+nav {
+	position: fixed !important;
+	top: 0;
+	z-index: 10000;
+	font-size: 1.2em;
+	left: 0;
+	width: 100%;
+	transition: 0.5s;
+}
+/* screen scroll effect */
+nav.sticky {
+	background: var(--light-color) !important;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.green {
+	color: var(--primary-color) !important;
+}
+/* Hover effect */
+nav a:hover {
+	color:var(--primary-color) !important;
+}
+/* For logo size */
+.navbar-brand {
+	font-size: 2em !important;
+}
+/* Banner Section */
+
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background: url('../images/banner_1.jpg');
+	background-attachment: fixed;
+}
+/* For counters(countries visited etc) */
+.stats {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	align-items: center;
+
+	padding: 3rem 0rem;
+}
+.stats .items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	font-size: 1.5em;
+}
+.stats .items p {
+	color:var(--light-color);
+}
+
+/* Background overlay */
+.overlay {
+	background: rgba(51, 51, 51, 0.507);
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Banner Content */
+.banner .content {
+	color:var(--light-color);
+	max-width: 900px;
+	text-align: center;
+}
+.banner .content h2 {
+	font-size: 5em;
+	color: var(--light-color);
+}
+.banner .content p {
+	color: var(--light-color);
+	font-size: 1em;
+}
+
+/* About Section */
+.about {
+	padding: 5rem;
+}
+.about .row {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.about_info {
+	background:var(--light-color);
+	padding: 1rem;
+	width: 100%;
+	box-shadow: 5px 5px 10px rgb(139, 139, 139);
+}
+.enLarge {
+	font-size: 1.8em;
+	color:var(--primary-color);
+}
+/* Stories */
+.stories {
+	text-align: center;
+}
+/* Image height */
+.card-img-top {
+	height: 200px;
+}
+.story {
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	margin: 2rem;
+	transition: 0.5s;
+}
+.card:hover {
+	box-shadow: 5px 5px 10px rgb(139, 139, 139);
+}
+/* Photography */
+#photography {
+	text-align: center;
+	margin: 9rem;
+}
+#photography h2 {
+	font-size: 2.5em;
+}
+/* Contact */
+.contact {
+	padding-bottom: 2rem;
+}
+/* Footer */
+
+#main-footer {
+	background:var(--secondary-color);
+	color: #fff;
+}
+
+#main-footer img {
+	width: 150px;
+}
+
+#main-footer a {
+	color: #fff;
+}
+
+#main-footer .footer-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+	background: #444;
+	grid-column: 1 / span 4;
+	padding: 0.5rem;
+	text-align: center;
+	font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+	width: 90%;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+	width: 90%;
+}
+/* For icons */
+.sci {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+	margin-top: 3rem;
+	color: var(--light-color);
+	/* padding: 2rem; */
+}
+.sci i {
+	color: var(--light-color);
+	height: 100px;
+}
